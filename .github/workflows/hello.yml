@@ -1,0 +1,9 @@
+# Workflow syntax
+name: Hello                       # Workflow name
+on: push                          # Events
+jobs:                             # Define jobs
+  hello:                          # Job ID
+    runs-on: ubuntu-latest
+    steps:                        # Define steps
+      - run: echo "Hello, world"  # Shell command
+      - uses: actions/checkout@v4 # Call Actions
